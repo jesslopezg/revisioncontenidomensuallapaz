@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Contenido La Paz Noviembre</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: una columna editorial; cada pieza = encabezado, tira horizontal de diseños a escala, textos debajo. */
+:root {
+  --bg: #F5F2EC; --surface: #FFFFFF; --sand: #E6DFD3; --ink: #1C1410; --soft: #3A2F29;
+  --muted: #6B574D; --gold: #B8955A; --gold-text: #7A5E2E; --line: #D9D1C5;
+  --display: 'Cormorant Garamond', 'Georgia', serif; --sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #17110D; --surface: #241C17; --sand: #2E241E; --ink: #F5F2EC; --soft: #E6DFD3;
+  --muted: #C9C2B6; --gold: #B8955A; --gold-text: #D9B97F; --line: #3D322B; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #17110D; --surface: #241C17; --sand: #2E241E; --ink: #F5F2EC; --soft: #E6DFD3;
+  --muted: #C9C2B6; --gold: #B8955A; --gold-text: #D9B97F; --line: #3D322B; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 96px; display: flex; flex-direction: column; gap: 72px; }
+.logo { width: 220px; height: auto; display: block; }
+.logo-on-dark { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-on-light { display: none; } :root:not([data-theme="light"]) .logo-on-dark { display: block; } }
+:root[data-theme="dark"] .logo-on-light { display: none; } :root[data-theme="dark"] .logo-on-dark { display: block; }
+.hero { display: flex; flex-direction: column; gap: 24px; }
+.eyebrow { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(44px, 7vw, 80px); line-height: 1; letter-spacing: -.01em; text-wrap: balance; }
+.lead { margin: 0; max-width: 62ch; font-size: 18px; color: var(--soft); }
+.rule { width: 72px; height: 3px; background: var(--gold); }
+.counts { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0; padding: 0; list-style: none; font-size: 15px; color: var(--muted); }
+.counts strong { font-family: var(--display); font-size: 30px; font-weight: 500; color: var(--ink); margin-right: 6px; }
+h2 { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(32px, 4.5vw, 48px); line-height: 1.05; text-wrap: balance; }
+h3 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-text); }
+h4 { margin: 16px 0 6px; font-size: 14px; font-weight: 600; }
+.section-head { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th { text-align: left; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 10px 12px 10px 0; border-bottom: 2px solid var(--ink); }
+td { padding: 12px 12px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.num { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); }
+a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 3px; }
+a:hover { color: var(--gold-text); }
+a:focus-visible, .strip:focus-visible, summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.piece { display: flex; flex-direction: column; gap: 28px; padding-top: 48px; border-top: 1px solid var(--line); scroll-margin-top: 16px; }
+.piece-head { display: flex; flex-direction: column; gap: 12px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 32px; margin: 4px 0 0; }
+.meta div { display: flex; gap: 8px; align-items: baseline; }
+.meta dt { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.meta dd { margin: 0; font-size: 15px; }
+.strip { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x proximity; }
+.slide { --w: 280px; flex: none; margin: 0; display: flex; flex-direction: column; gap: 8px; scroll-snap-align: start; }
+.frame { width: var(--w); height: calc(var(--w) * 1.25); overflow: hidden; position: relative; border-radius: 4px; box-shadow: 0 0 0 1px var(--line); }
+.slide.tall .frame { height: calc(var(--w) * 1920 / 1080); }
+.art { width: 1080px; transform: scale(calc(280 / 1080)); transform-origin: 0 0; position: absolute; top: 0; left: 0; }
+.art img { max-width: none; }
+figcaption { font-size: 13px; color: var(--muted); }
+.body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+.why { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 10px 24px; align-items: baseline; }
+.why p { margin: 0; max-width: 70ch; }
+.hook { font-family: var(--display); font-style: italic; font-size: 24px; line-height: 1.2; }
+.script { display: flex; flex-direction: column; gap: 14px; }
+.script > p { margin: 0; max-width: 72ch; }
+.scenes td:nth-child(3) { font-family: var(--display); font-size: 18px; line-height: 1.35; }
+.note { margin: 0; font-size: 15px; color: var(--soft); }
+blockquote { margin: 0; padding: 16px 20px; background: var(--sand); border-radius: 4px; font-family: var(--display); font-size: 19px; line-height: 1.45; max-width: 80ch; }
+.captions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 20px; }
+.caption { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.captext p { margin: 0 0 12px; white-space: pre-line; font-size: 15px; }
+.captext p:last-child { margin-bottom: 0; color: var(--muted); }
+details.prompts { border-top: 1px solid var(--line); padding-top: 14px; }
+summary { cursor: pointer; font-size: 14px; font-weight: 600; color: var(--gold-text); }
+pre { margin: 0; padding: 14px 16px; background: var(--sand); border-radius: 4px; font-family: var(--mono); font-size: 12.5px; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+.confirm ol { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: 75ch; }
+footer { font-size: 14px; color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
+@media (max-width: 640px) {
+  .slide { --w: 220px; } .art { transform: scale(calc(220 / 1080)); }
+  .why { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .why h3:not(:first-child) { margin-top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+html { scroll-behavior: smooth; }
+</style>
+
+<style id="review-style">
+.client-instructions,.client-summary,.client-panel{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:22px 24px;display:grid;gap:13px}
+.client-instructions h2,.client-summary h2{font-size:clamp(27px,4vw,40px)}
+.client-instructions p,.client-summary p{margin:0;color:var(--soft)}
+.client-panel{border-left:4px solid var(--gold);margin-top:4px}
+.client-panel h3{font-size:14px;color:var(--ink);letter-spacing:.05em}
+.client-panel label,.client-summary label{display:grid;gap:7px;font-size:13px;font-weight:600;color:var(--soft)}
+.client-panel select,.client-panel textarea,.client-summary input,.client-summary textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:12px;box-sizing:border-box;width:100%}
+.client-panel select{max-width:400px}
+.client-panel textarea{min-height:95px;resize:vertical}
+.client-summary{padding:28px}
+.client-actions{display:flex;gap:10px;flex-wrap:wrap}
+.client-actions button{font:600 14px var(--sans);padding:13px 17px;border-radius:5px;cursor:pointer;background:var(--ink);color:var(--bg);border:1px solid var(--ink)}
+.client-actions button.secondary{background:transparent;color:var(--ink)}
+.client-hint,.client-feedback{font-size:13px;color:var(--muted)}
+.client-status-badge{justify-self:start;background:var(--sand);padding:5px 9px;border-radius:4px;font-size:12px;font-weight:600}
+@media(max-width:640px){.client-instructions,.client-summary,.client-panel{padding:18px}.client-actions{flex-direction:column}.client-actions button{width:100%}}
+</style></head>
+<body>
+<div class="wrap">
+<header class="hero">
+<img class="logo logo-on-light" src="assets/visual-01.svg" alt="Funeraria La Paz">
+<img class="logo logo-on-dark" src="assets/visual-02.svg" alt="Funeraria La Paz">
+<p class="eyebrow">Propuesta de contenido · Instagram y Facebook</p>
+<h1>Del 16 de noviembre al 10 de diciembre</h1>
+<div class="rule"></div>
+<p class="lead">Quince publicaciones para San Diego y Escondido, en español y en inglés. Cada una tiene una razón para existir: explicar algo, dar tranquilidad, generar confianza o abrir una conversación por mensaje. Abajo están todos los diseños, los textos y los guiones de video, en orden de publicación.</p>
+<ul class="counts"><li><strong>15</strong>publicaciones</li><li><strong>5</strong>reels</li><li><strong>5</strong>carruseles</li><li><strong>5</strong>estáticos</li></ul>
+</header><aside class="client-instructions"><h2>Revisión del cliente · Noviembre 2026</h2><p>Revisa las propuestas y marca cada una como aprobada, pendiente o con cambios. Puedes dejar comentarios específicos sobre imágenes, textos o fechas. Las respuestas se conservan en este navegador hasta que se envíen.</p><p><a href="#enviar-revision">Ir al resumen de revisión</a></p></aside>
+<section>
+<div class="section-head"><p class="eyebrow">Calendario</p><h2>Orden de publicación</h2></div>
+<div class="tablewrap"><table><thead><tr><th>Fecha</th><th>Pieza</th><th>Formato</th><th>Idioma</th><th>Pilar</th></tr></thead><tbody><tr><td class="num">Lun 16 nov</td><td><a href="#pieza-1">Una plática en la cocina</a></td><td>Reel</td><td>ES + EN</td><td>Planificación anticipada</td></tr><tr><td class="num">Mar 17 nov</td><td><a href="#pieza-2">Las primeras horas</a></td><td>Carrusel</td><td>ES</td><td>Educación</td></tr><tr><td class="num">Mié 18 nov</td><td><a href="#pieza-3">Cuatro formas de acompañarte</a></td><td>Estático</td><td>Bilingüe</td><td>Servicios</td></tr><tr><td class="num">Jue 19 nov</td><td><a href="#pieza-4">Mitos y realidades</a></td><td>Carrusel</td><td>ES</td><td>Planificación anticipada</td></tr><tr><td class="num">Vie 20 nov</td><td><a href="#pieza-5">La primera llamada</a></td><td>Reel</td><td>ES + EN</td><td>Acompañamiento</td></tr><tr><td class="num">Sáb 21 nov</td><td><a href="#pieza-6">Quién te contesta</a></td><td>Estático</td><td>ES</td><td>Confianza</td></tr><tr><td class="num">Lun 23 nov</td><td><a href="#pieza-7">How to talk to your parents about their wishes</a></td><td>Carrusel</td><td>EN</td><td>Planificación anticipada</td></tr><tr><td class="num">Mar 24 nov</td><td><a href="#pieza-12">La caja de recetas</a></td><td>Reel</td><td>ES + EN</td><td>Planificación anticipada</td></tr><tr><td class="num">Mié 25 nov</td><td><a href="#pieza-11">¿Tu familia sabe esto de ti?</a></td><td>Estático</td><td>Bilingüe</td><td>Planificación anticipada</td></tr><tr><td class="num">Lun 30 nov</td><td><a href="#pieza-8">Volver a casa</a></td><td>Reel</td><td>ES + EN</td><td>Servicios</td></tr><tr><td class="num">Mar 1 dic</td><td><a href="#pieza-9">No tienes que saber qué preguntar</a></td><td>Estático</td><td>ES</td><td>Acompañamiento</td></tr><tr><td class="num">Jue 3 dic</td><td><a href="#pieza-10">Cremación o entierro</a></td><td>Carrusel</td><td>ES</td><td>Educación</td></tr><tr><td class="num">Sáb 5 dic</td><td><a href="#pieza-13">Lo que conviene tener a la mano</a></td><td>Carrusel</td><td>ES</td><td>Educación</td></tr><tr><td class="num">Mar 8 dic</td><td><a href="#pieza-14">La foto del bisabuelo</a></td><td>Reel</td><td>ES + EN</td><td>Servicios</td></tr><tr><td class="num">Jue 10 dic</td><td><a href="#pieza-15">Dos ubicaciones</a></td><td>Estático</td><td>Bilingüe</td><td>Comunidad y ubicaciones</td></tr></tbody></table></div>
+<p class="note" style="margin-top:14px">No hay publicaciones el jueves 26 ni el viernes 27 de noviembre (Thanksgiving y Black Friday).</p>
+</section>
+<article id="pieza-1" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 1 · Lun 16 nov</p><h2>Una plática en la cocina</h2><dl class="meta"><div><dt>Formato</dt><dd>Reel 9:16 · 30–35 s</dd></div><div><dt>Idioma</dt><dd>ES + EN</dd></div><div><dt>Pilar</dt><dd>Planificación anticipada</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<img src="assets/visual-03.jpg" alt="Madre e hija platicando con café en la cocina" style="flex: none; width: 1080px; height: 1100px; object-fit: cover; object-position: 50% 0%; display: block">
+<div style="flex: 1; box-sizing: border-box; padding: 64px 96px 0; display: flex; flex-direction: column; gap: 26px; border-top: 3px solid #B8955A">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Una plática en la cocina</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 100px; line-height: 1; letter-spacing: -0.01em">Hablar del futuro no tiene que ser incómodo.</h1>
+</div>
+</div></div></div><figcaption>Portada</figcaption></figure><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; padding: 420px 96px 440px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center">
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 560px; height: auto; display: block">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 28px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 72px; line-height: 1.05">Te acompañamos desde la primera llamada.</p>
+<p style="margin: 0; font-size: 34px; line-height: 1.4; color: #3A2F29">Escríbenos o llámanos. Te atendemos en español o en inglés.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+</div>
+</div>
+</div></div></div><figcaption>Placa final</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Presentar la planificación anticipada como una conversación familiar tranquila, no como una predicción. Que la gente escriba para conocer sus opciones.</p><h3>Hook</h3><p class="hook">“Mi mamá me sirvió café y me dijo que quería platicar algo.”</p></div><section class="script"><h3>Historia</h3><p>Una mujer de unos 45 años visita a su mamá un domingo. En la cocina, con café de olla, la mamá le cuenta que quiere dejar claras algunas decisiones para que sus hijos no tengan que adivinar en un momento difícil. No hay tristeza: la plática termina con alivio y hasta con risas.</p><h3>Guion</h3><div class="tablewrap"><table class="scenes"><thead><tr><th>Tiempo</th><th>Escena</th><th>Narración en español</th></tr></thead><tbody><tr><td class="num">0–5 s</td><td>Exterior de una casa de estuco en el sur de California, mañana soleada. La hija llega con una bolsa de pan dulce; la mamá abre la puerta.</td><td>“El domingo fui a ver a mi mamá, como siempre.”</td></tr><tr><td class="num">5–12 s</td><td>Cocina luminosa. La mamá (unos 70) sirve café de una olla de barro; se sientan a la mesa.</td><td>“Me sirvió café y me dijo que quería platicar algo. Pensé que era algo malo.”</td></tr><tr><td class="num">12–19 s</td><td>La mamá desliza una libreta sencilla sobre la mesa y habla con calma. La hija la escucha, sorprendida pero atenta.</td><td>“Pero no. Quería dejar claras algunas decisiones, para que nosotros no tuviéramos que adivinar después.”</td></tr><tr><td class="num">19–26 s</td><td>Plano cerrado de manos: la hija hojea la libreta, la mamá señala algo y las dos se ríen.</td><td>“Hablar del futuro no tiene que ser incómodo.”</td></tr><tr><td class="num">26–34 s</td><td>Porche al mediodía. Se despiden con un abrazo largo y tranquilo.</td><td>“A veces, dejar claras nuestras decisiones también es una forma de cuidar a quienes queremos. En Funeraria La Paz podemos orientarte sobre planificación anticipada, en San Diego y Escondido. Escríbenos si quieres conocer tus opciones.”</td></tr></tbody></table></div><p class="note"><strong>Voz:</strong> Mujer latina de unos 45 años, cálida y conversacional.</p><h3>Narración en inglés</h3><blockquote>Every Sunday, I visit my mom. This time she poured me coffee and said she wanted to talk about something. I thought it was bad news. It wasn&#x27;t. She wanted to make a few decisions clear, so we wouldn&#x27;t have to guess later. Talking about the future doesn&#x27;t have to be uncomfortable. Sometimes, making our wishes clear is one more way to take care of the people we love. At La Paz Funeral Home, we can guide you through planning ahead, in San Diego and Escondido. Send us a message to learn your options.</blockquote></section><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>“Mamá, ¿y eso a qué viene?” 🤍</p><p>A veces la plática más importante empieza con un café. Dejar claras nuestras decisiones no es pensar en lo triste: es evitar que la familia tenga que adivinar en un momento difícil.</p><p>Si estás considerando planear con anticipación, escríbenos y te explicamos las opciones disponibles, con calma y en español.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #PlanificaciónAnticipada #SanDiego #Escondido</p></div></div><div class="caption"><h3>Caption EN</h3><div class="captext"><p>“Mom, where is this coming from?” 🤍</p><p>Sometimes the most important conversation starts over coffee. Making our wishes clear isn&#x27;t about sadness. It&#x27;s about sparing our family from guessing at a hard moment.</p><p>If you&#x27;re thinking about planning ahead, send us a message and we&#x27;ll walk you through your options.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#LaPazFuneralHome #PlanningAhead #SanDiego #Escondido</p></div></div></section><details class="prompts"><summary>Prompts de producción</summary><h4>Prompt de video</h4><pre>Vertical video, 1080 x 1920 px, 9:16, 34 seconds, 5 distinct scenes. Documentary, naturalistic style, steady handheld, 35mm look with gentle film grain. Light, airy palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key natural light, soft shadows. Real-looking Mexican-American family, not models.
+Scene 1 (0-5s): Exterior of a Southern California stucco house, sunny morning. A woman about 45 arrives carrying a paper bag of pan dulce; her mother, about 70, opens the door smiling.
+Scene 2 (5-12s): Bright kitchen. The mother pours coffee from a clay olla; they sit at a wooden table.
+Scene 3 (12-19s): The mother slides a simple notebook across the table and speaks calmly; the daughter listens, surprised but attentive.
+Scene 4 (19-26s): Close-up of hands: the daughter turns the notebook pages, the mother points at something, both laugh.
+Scene 5 (26-34s): Front porch at midday. A long, calm hug goodbye.
+Mood: warm, calm, relieved. No sadness, no tears, no hospitals, no coffins, no candles, no religious objects. No subtitles, no on-screen text, no logos, no watermarks, no graphics.</pre><h4>Foto de portada</h4><pre>Vertical photo, 1080 x 1920 px, aspect ratio 9:16. Candid documentary style. A Mexican-American woman about 45 and her mother about 70 at a bright kitchen table with coffee mugs and a simple notebook, the mother talking calmly, the daughter listening with a soft smile. Bright morning window light. Light palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key, airy, gentle film grain. Keep the lower 40% of the frame free of key details. No dark tones, no text, no religious objects, no tears, not stock-looking.</pre></details></div><section class="client-panel" data-piece="pieza-1"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-1"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-2" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 2 · Mar 17 nov</p><h2>Las primeras horas</h2><dl class="meta"><div><dt>Formato</dt><dd>Carrusel · 7 slides</dd></div><div><dt>Idioma</dt><dd>ES</dd></div><div><dt>Pilar</dt><dd>Educación</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #1C1410; color: #F5F2EC; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<img src="assets/visual-04.jpg" alt="Manos de una mujer con su teléfono junto a una taza de café y una libreta" style="flex: none; width: 1080px; height: 700px; object-fit: cover; object-position: 50% 50%; display: block; border-bottom: 3px solid #B8955A">
+<div style="flex: 1; box-sizing: border-box; padding: 64px 96px 72px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #C9C2B6">
+<span>Guía para familias</span>
+<span>01 / 07</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 120px; line-height: 1; letter-spacing: -0.01em">¿Qué hacemos ahora?</h1>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px">
+<p style="margin: 0; font-size: 36px; line-height: 1.35; color: #E6DFD3; max-width: 680px">Una guía breve para las primeras horas después de que fallece un familiar.</p>
+<span style="display: flex; align-items: center; gap: 14px; font-size: 26px; color: #C9C2B6; flex: none">Desliza
+<svg width="44" height="20" viewBox="0 0 44 20" fill="none" stroke="#B8955A" stroke-width="2"><path d="M0 10h40M32 2l8 8-8 8"></path></svg>
+</span>
+</div>
+</div>
+</div></div></div><figcaption>Slide 1</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Las primeras horas</span>
+<span>02 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 100px; line-height: 1.05; letter-spacing: -0.015em">Primero, respira. No todo se decide hoy.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">Muchas familias sienten que tienen que resolverlo todo de inmediato.</p>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">En realidad, solo hay <strong style="font-weight: 600; color: #1C1410">un par de pasos urgentes</strong>. Lo demás, como el tipo de servicio, se puede platicar con calma.</p>
+</div>
+<div style="font-size: 28px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 2</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Las primeras horas</span>
+<span>03 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 30px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #6B574D">Si ocurre en casa</span>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 88px; line-height: 1.06; letter-spacing: -0.015em">La primera llamada depende de la situación.</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0; border-top: 2px solid #1C1410">
+<div style="display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; padding: 40px 0; border-bottom: 1px solid #D9D1C5">
+<span style="font-size: 32px; font-weight: 600; line-height: 1.35">Con cuidados paliativos (hospice)</span>
+<span style="font-size: 36px; line-height: 1.45; color: #3A2F29">Llama primero a la agencia de hospice. Ellos te indican el siguiente paso.</span>
+</div>
+<div style="display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; padding: 40px 0; border-bottom: 1px solid #D9D1C5">
+<span style="font-size: 32px; font-weight: 600; line-height: 1.35">Si fue inesperado</span>
+<span style="font-size: 36px; line-height: 1.45; color: #3A2F29">Llama al 911. Las autoridades atienden primero y después podrás contactar a la funeraria.</span>
+</div>
+</div>
+</div>
+<div style="font-size: 28px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 3</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Las primeras horas</span>
+<span>04 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 48px">
+<span style="font-size: 30px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #6B574D">Si ocurre en un hospital o asilo</span>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.06; letter-spacing: -0.015em">El personal te va a preguntar: ¿qué funeraria eligieron?</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">Puedes tomarte unos minutos para decidir. Cuando tengas el nombre, la funeraria se coordina directamente con el hospital o el asilo.</p>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">No tienes que encargarte tú del traslado.</p>
+</div>
+<div style="font-size: 28px; color: #5E5049">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 4</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Las primeras horas</span>
+<span>05 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 48px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 88px; line-height: 1.06; letter-spacing: -0.015em">Cuando llames a la funeraria, te van a preguntar:</h2>
+<div style="display: flex; flex-direction: column; gap: 0; border-top: 2px solid #1C1410">
+<div style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 24px; padding: 30px 0; border-bottom: 1px solid #D9D1C5; align-items: baseline">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 52px; color: #6B574D">1</span>
+<span style="font-size: 38px; line-height: 1.4">El nombre completo de tu familiar</span>
+</div>
+<div style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 24px; padding: 30px 0; border-bottom: 1px solid #D9D1C5; align-items: baseline">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 52px; color: #6B574D">2</span>
+<span style="font-size: 38px; line-height: 1.4">Dónde se encuentra: casa, hospital o asilo</span>
+</div>
+<div style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 24px; padding: 30px 0; border-bottom: 1px solid #D9D1C5; align-items: baseline">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 52px; color: #6B574D">3</span>
+<span style="font-size: 38px; line-height: 1.4">Tu nombre y un teléfono donde localizarte</span>
+</div>
+<div style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 24px; padding: 30px 0; border-bottom: 1px solid #D9D1C5; align-items: baseline">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 52px; color: #6B574D">4</span>
+<span style="font-size: 38px; line-height: 1.4">Si dejó un plan previo o deseos por escrito</span>
+</div>
+</div>
+<p style="margin: 0; font-size: 34px; line-height: 1.45; color: #6B574D">Si no sabes alguna respuesta, no pasa nada. Te ayudamos a resolverla.</p>
+</div>
+<div style="font-size: 28px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 5</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Las primeras horas</span>
+<span>06 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 48px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 88px; line-height: 1.06; letter-spacing: -0.015em">Lo que sí puede esperar</h2>
+<p style="margin: 0; font-size: 38px; line-height: 1.45; color: #3A2F29">Estas decisiones se platican después, con la funeraria y con calma:</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 150px; box-sizing: border-box">Cremación o entierro</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 150px; box-sizing: border-box">Tipo de servicio y fecha</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 150px; box-sizing: border-box">Traslado a otra ciudad o a otro país</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 150px; box-sizing: border-box">Avisar al resto de la familia y amigos</div>
+</div>
+</div>
+<div style="font-size: 28px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 6</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #1C1410; color: #F5F2EC; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #C9C2B6">
+<span>Las primeras horas</span>
+<span>07 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 108px; line-height: 1.02; letter-spacing: -0.01em">No tienes que saberlo todo para llamarnos.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #E6DFD3">Escríbenos por mensaje o llámanos. Te explicamos el proceso paso a paso, en español o en inglés.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+<span style="font-size: 28px; color: #C9C2B6">2601 Imperial Ave</span>
+</div>
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+<span style="font-size: 28px; color: #C9C2B6">2437 S Centre City Pkwy</span>
+</div>
+</div>
+<img src="assets/visual-02.svg" alt="Funeraria La Paz" style="width: 420px; height: auto; display: block">
+</div>
+</div></div></div><figcaption>Slide 7</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Responder la pregunta “¿qué hacemos ahora?” con pasos claros, y que la familia sepa que puede llamar aunque no tenga todo resuelto.</p><h3>Hook</h3><p class="hook">“¿Qué hacemos ahora?”</p></div><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>Cuando una familia recibe una noticia inesperada, muchas veces la primera pregunta es simplemente: ¿qué hacemos ahora?</p><p>En este carrusel te explicamos lo urgente y lo que sí puede esperar: a quién llamar primero según dónde ocurra, qué te va a preguntar la funeraria y qué decisiones se pueden platicar después, con calma.</p><p>Guárdalo o compártelo con alguien de tu familia. Y si lo necesitas, escríbenos o llámanos: te explicamos el proceso paso a paso, en español o en inglés.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #Orientación #SanDiego #Escondido</p></div></div></section></div><section class="client-panel" data-piece="pieza-2"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-2"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-3" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 3 · Mié 18 nov</p><h2>Cuatro formas de acompañarte</h2><dl class="meta"><div><dt>Formato</dt><dd>Estático</dd></div><div><dt>Idioma</dt><dd>Bilingüe</dd></div><div><dt>Pilar</dt><dd>Servicios</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<img src="assets/visual-05.jpg" alt="Fachada de Funeraria La Paz en Escondido" style="width: 1080px; height: 560px; object-fit: cover; object-position: 50% 45%; display: block; flex: none">
+<div style="flex: 1; box-sizing: border-box; padding: 56px 96px 72px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Nuestros servicios · Our services</span>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 76px; line-height: 1.02; letter-spacing: -0.01em">Cuatro formas de acompañarte</h1>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 40px; line-height: 1.1; color: #6B574D">Four ways we walk with your family</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 2px solid #1C1410">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 24px 28px 24px 0; border-bottom: 1px solid #D9D1C5; border-right: 1px solid #D9D1C5">
+<span style="font-size: 32px; font-weight: 600; line-height: 1.2"><span style="font-family: 'Cormorant Garamond', serif; color: #B8955A; font-weight: 500">01 </span>Planificación anticipada</span>
+<span style="font-size: 24px; color: #6B574D">Pre-planning</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 24px 0 24px 28px; border-bottom: 1px solid #D9D1C5">
+<span style="font-size: 32px; font-weight: 600; line-height: 1.2"><span style="font-family: 'Cormorant Garamond', serif; color: #B8955A; font-weight: 500">02 </span>Cremación</span>
+<span style="font-size: 24px; color: #6B574D">Cremation</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 24px 28px 24px 0; border-bottom: 1px solid #D9D1C5; border-right: 1px solid #D9D1C5">
+<span style="font-size: 32px; font-weight: 600; line-height: 1.2"><span style="font-family: 'Cormorant Garamond', serif; color: #B8955A; font-weight: 500">03 </span>Servicio tradicional y entierro</span>
+<span style="font-size: 24px; color: #6B574D">Traditional service &amp; burial</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 24px 0 24px 28px; border-bottom: 1px solid #D9D1C5">
+<span style="font-size: 32px; font-weight: 600; line-height: 1.2"><span style="font-family: 'Cormorant Garamond', serif; color: #B8955A; font-weight: 500">04 </span>Traslados nacionales e internacionales</span>
+<span style="font-size: 24px; color: #6B574D">Domestic &amp; international transfers</span>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 28px; font-weight: 600">San Diego · Escondido</span>
+<span style="font-size: 24px; color: #6B574D">Orientación en español e inglés</span>
+</div>
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 300px; height: auto; display: block">
+</div>
+</div>
+</div></div></div><figcaption>Pieza</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Mostrar en una sola pieza los cuatro servicios principales y que la gente pregunte por el que necesita.</p><h3>Hook</h3><p class="hook">“Cuatro formas de acompañarte.”</p></div><section class="captions"><div class="caption"><h3>Caption bilingüe</h3><div class="captext"><p>Cada familia llega con una pregunta distinta. 🤍 En Funeraria La Paz te orientamos en planificación anticipada, cremación, servicio tradicional y entierro, y traslados nacionales e internacionales. Escríbenos y te explicamos la opción que buscas, en español o en inglés.</p><p>Every family comes with a different question. We can guide you through pre-planning, cremation, traditional services and burial, and domestic and international transfers. Send us a message and we&#x27;ll explain the option you&#x27;re looking for.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #LaPazFuneralHome #SanDiego #Escondido</p></div></div></section></div><section class="client-panel" data-piece="pieza-3"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-3"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-4" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 4 · Jue 19 nov</p><h2>Mitos y realidades</h2><dl class="meta"><div><dt>Formato</dt><dd>Carrusel · 7 slides</dd></div><div><dt>Idioma</dt><dd>ES</dd></div><div><dt>Pilar</dt><dd>Planificación anticipada</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #1C1410; color: #F5F2EC; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<div style="flex: 1; box-sizing: border-box; padding: 88px 96px 56px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #C9C2B6">
+<span>Mitos y realidades</span>
+<span>01 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.02; letter-spacing: -0.01em">Planear tu servicio no es pensar en la muerte todo el tiempo.</h1>
+</div>
+</div>
+<img src="assets/visual-06.jpg" alt="Madre e hija revisando juntas una libreta en la sala" style="flex: none; width: 1080px; height: 640px; object-fit: cover; object-position: 50% 40%; display: block; border-top: 3px solid #B8955A">
+</div></div></div><figcaption>Slide 1</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Mitos y realidades</span>
+<span>02 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 48px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 96px; line-height: 1.04; letter-spacing: -0.01em">Primero, ¿qué es planear con anticipación?</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">Es conocer tus opciones con calma y dejar claras tus preferencias: cremación o entierro, qué tipo de servicio te gustaría y dónde te gustaría descansar.</p>
+<div style="display: flex; flex-direction: column; gap: 28px; padding-top: 40px; border-top: 1px solid #D9D1C5">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 56px; line-height: 1.15; color: #6B574D">Es una decisión práctica y familiar, no un presentimiento.</p>
+</div>
+</div>
+<div style="font-size: 28px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 2</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Mitos y realidades</span>
+<span>03 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Mito 01</span>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 84px; line-height: 1.06; color: #6B574D">“Eso es solo para personas mayores o enfermas.”</p>
+</div>
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #1C1410">Realidad</span>
+<p style="margin: 0; font-size: 42px; line-height: 1.42; color: #1C1410">Cualquier adulto puede hacerlo. Muchas personas lo piensan cuando cambia su vida: nace un nieto, se retiran o simplemente quieren dejar las cosas en orden.</p>
+</div>
+</div>
+<div style="font-size: 28px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 3</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Mitos y realidades</span>
+<span>04 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">Mito 02</span>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 84px; line-height: 1.06; color: #5E5049">“Hablar de eso es llamar a la mala suerte.”</p>
+</div>
+<div style="width: 96px; height: 3px; background: #1C1410"></div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #1C1410">Realidad</span>
+<p style="margin: 0; font-size: 42px; line-height: 1.42; color: #1C1410">Es una plática sobre cuidado, como hacer un testamento o tener un seguro. No cambia lo que va a pasar; solo le da claridad a tu familia.</p>
+</div>
+</div>
+<div style="font-size: 28px; color: #5E5049">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 4</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Mitos y realidades</span>
+<span>05 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Mito 03</span>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 84px; line-height: 1.06; color: #6B574D">“Mi familia ya sabe lo que yo quiero.”</p>
+</div>
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #1C1410">Realidad</span>
+<p style="margin: 0; font-size: 42px; line-height: 1.42; color: #1C1410">Muchas veces cada hijo recuerda algo distinto. Cuando tus deseos están claros, nadie tiene que adivinar ni discutir en un momento difícil.</p>
+</div>
+</div>
+<div style="font-size: 28px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 5</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Mitos y realidades</span>
+<span>06 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">Mito 04</span>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 84px; line-height: 1.06; color: #5E5049">“Tengo que decidirlo todo en una sola cita.”</p>
+</div>
+<div style="width: 96px; height: 3px; background: #1C1410"></div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #1C1410">Realidad</span>
+<p style="margin: 0; font-size: 42px; line-height: 1.42; color: #1C1410">Puedes empezar solo con preguntas. Una primera conversación sirve para conocer las opciones; las decisiones se toman a tu ritmo y, si quieres, en familia.</p>
+</div>
+</div>
+<div style="font-size: 28px; color: #5E5049">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 6</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #1C1410; color: #F5F2EC; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #C9C2B6">
+<span>Mitos y realidades</span>
+<span>07 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 108px; line-height: 1.02; letter-spacing: -0.01em">¿Por dónde empezar? Por una conversación.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #E6DFD3">Escríbenos y te explicamos las opciones de planificación anticipada, con calma y en español o inglés.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+<span style="font-size: 28px; color: #C9C2B6">2601 Imperial Ave</span>
+</div>
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+<span style="font-size: 28px; color: #C9C2B6">2437 S Centre City Pkwy</span>
+</div>
+</div>
+<img src="assets/visual-02.svg" alt="Funeraria La Paz" style="width: 420px; height: auto; display: block">
+</div>
+</div></div></div><figcaption>Slide 7</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Desmontar cuatro ideas que frenan la planificación anticipada y abrir la puerta a una primera conversación sin compromiso de decidir.</p><h3>Hook</h3><p class="hook">“Planear tu servicio no es pensar en la muerte todo el tiempo.”</p></div><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>“Eso es para personas mayores.” “Hablar de eso es llamar a la mala suerte.” ¿Te suena? 🤍</p><p>Muchas familias evitan el tema por ideas que se repiten en casa. En este carrusel te contamos cuatro de las más comunes y lo que en realidad significa planear con anticipación: conocer tus opciones con calma y dejar claras tus preferencias.</p><p>Puedes empezar solo con preguntas. Escríbenos y te explicamos las opciones disponibles.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #PlanificaciónAnticipada #SanDiego #Escondido</p></div></div></section></div><section class="client-panel" data-piece="pieza-4"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-4"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-5" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 5 · Vie 20 nov</p><h2>La primera llamada</h2><dl class="meta"><div><dt>Formato</dt><dd>Reel 9:16 · 30–35 s</dd></div><div><dt>Idioma</dt><dd>ES + EN</dd></div><div><dt>Pilar</dt><dd>Acompañamiento</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<div style="flex: none; height: 640px; box-sizing: border-box; padding: 300px 96px 56px; display: flex; flex-direction: column; justify-content: flex-end; gap: 22px">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">La primera llamada</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 104px; line-height: 1; letter-spacing: -0.01em">“No sabía qué preguntar.”</h1>
+</div>
+<img src="assets/visual-07.jpg" alt="Hombre en su carro hablando por teléfono, aliviado" style="flex: 1; width: 1080px; min-height: 0; object-fit: cover; object-position: 50% 62%; display: block; border-top: 3px solid #B8955A">
+</div></div></div><figcaption>Portada</figcaption></figure><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; padding: 420px 96px 440px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center">
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 560px; height: auto; display: block">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 28px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 72px; line-height: 1.05">Te acompañamos desde la primera llamada.</p>
+<p style="margin: 0; font-size: 34px; line-height: 1.4; color: #3A2F29">Escríbenos o llámanos. Te atendemos en español o en inglés.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+</div>
+</div>
+</div></div></div><figcaption>Placa final</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Quitarle el miedo a la primera llamada: mostrar que del otro lado hay una persona que guía. Que la gente llame o escriba.</p><h3>Hook</h3><p class="hook">“No sabía qué preguntar.”</p></div><section class="script"><h3>Historia</h3><p>Un hombre de unos 45 años recibe una noticia y se queda en su carro con el teléfono en la mano, sin saber a quién llamar. Marca. Del otro lado le contestan con calma y le explican el siguiente paso. Al final llega a casa de su hermana y le dice que ya habló, que les van a ayudar.</p><h3>Guion</h3><div class="tablewrap"><table class="scenes"><thead><tr><th>Tiempo</th><th>Escena</th><th>Narración en español</th></tr></thead><tbody><tr><td class="num">0–6 s</td><td>Interior de un carro estacionado, luz de mañana. El hombre mira el teléfono, duda, respira.</td><td>“Cuando me avisaron, lo primero que pensé fue: ¿y ahora a quién le llamo?”</td></tr><tr><td class="num">6–12 s</td><td>Plano cerrado: su pulgar marca. Se lleva el teléfono al oído.</td><td>“Marqué sin saber qué preguntar.”</td></tr><tr><td class="num">12–19 s</td><td>Recepción de Funeraria La Paz: video real de una integrante del equipo, sin su audio original. Sobre la imagen sigue la narración.</td><td>“Del otro lado me contestó una persona que me explicó todo con calma, paso por paso.”</td></tr><tr><td class="num">19–25 s</td><td>De vuelta en el carro: él asiente, exhala y apunta algo en una libreta sobre el volante.</td><td>“Por primera vez en ese día, sentí que no estaba solo.”</td></tr><tr><td class="num">25–34 s</td><td>Entrada de una casa. Su hermana abre la puerta; él le dice algo y ella lo abraza.</td><td>“En Funeraria La Paz te acompañamos desde la primera llamada, en español o en inglés, en San Diego y Escondido. Llámanos o escríbenos.”</td></tr></tbody></table></div><p class="note"><strong>Voz:</strong> Hombre latino de unos 45 años, voz tranquila. Cierra con la placa final de los teléfonos.</p><h3>Narración en inglés</h3><blockquote>When I got the call, the first thing I thought was: who do I even call now? I dialed without knowing what to ask. The person who answered walked me through everything, calmly, one step at a time. For the first time that day, I didn&#x27;t feel alone. At La Paz Funeral Home, we&#x27;re with you from the very first call, in English or Spanish, in San Diego and Escondido. Call or send us a message.</blockquote></section><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>“No sabía qué preguntar.” 🤍</p><p>Es lo que más nos dicen las familias en la primera llamada. Y está bien: no tienes que saberlo. Nosotros te preguntamos lo necesario y te explicamos cada paso con calma.</p><p>Llámanos o escríbenos por mensaje. Te atendemos en español o en inglés.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #Acompañamiento #SanDiego #Escondido</p></div></div><div class="caption"><h3>Caption EN</h3><div class="captext"><p>“I didn&#x27;t know what to ask.” 🤍</p><p>It&#x27;s what families tell us most on that first call. And that&#x27;s okay: you don&#x27;t need to know. We&#x27;ll ask what&#x27;s needed and walk you through every step.</p><p>Call or message us. We&#x27;re here in English or Spanish.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#LaPazFuneralHome #SanDiego #Escondido</p></div></div></section><details class="prompts"><summary>Prompts de producción</summary><h4>Prompt de video</h4><pre>Vertical video, 1080 x 1920 px, 9:16, 34 seconds, 5 distinct scenes. Documentary, naturalistic style, steady handheld, 35mm look with gentle film grain. Light, airy palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key natural light, soft shadows. Real-looking Mexican-American family, not models.
+Scene 1 (0-6s): Inside a parked car, soft morning light. A Latino man about 45 looks at his phone, hesitates, takes a breath.
+Scene 2 (6-12s): Close-up: his thumb dials; he lifts the phone to his ear.
+Scene 3 (12-19s): Not generated: use the real clip of the La Paz reception team (IMG_0598), muted, with the voiceover running over it.
+Scene 4 (19-25s): Back in the car, he nods, exhales and writes something in a small notebook resting on the steering wheel.
+Scene 5 (25-34s): Front door of a modest Southern California home. His sister opens the door; he says something and she hugs him.
+Mood: calm, supported, quiet relief. No hospitals, no coffins, no tears, no religious objects. No subtitles, no on-screen text, no logos, no watermarks, no graphics.</pre></details></div><section class="client-panel" data-piece="pieza-5"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-5"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-6" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 6 · Sáb 21 nov</p><h2>Quién te contesta</h2><dl class="meta"><div><dt>Formato</dt><dd>Estático</dd></div><div><dt>Idioma</dt><dd>ES</dd></div><div><dt>Pilar</dt><dd>Confianza</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<img src="assets/visual-08.jpg" alt="Integrante del equipo de Funeraria La Paz en la recepción" style="flex: none; width: 1080px; height: 860px; object-fit: cover; object-position: 50% 50%; display: block">
+<div style="flex: 1; box-sizing: border-box; padding: 56px 96px 64px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Quién te contesta</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 84px; line-height: 1.02; letter-spacing: -0.01em">Detrás de cada llamada hay una persona.</h1>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px">
+<p style="margin: 0; font-size: 30px; line-height: 1.4; color: #3A2F29; max-width: 560px">Te atendemos en español o en inglés, en San Diego y Escondido.</p>
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 260px; height: auto; display: block">
+</div>
+</div>
+</div></div></div><figcaption>Pieza</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Ponerle cara al equipo para generar confianza antes de la primera llamada.</p><h3>Hook</h3><p class="hook">“Detrás de cada llamada hay una persona.”</p></div><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>Detrás de cada llamada hay una persona. 🤍</p><p>Cuando nos llamas o nos escribes, te contesta alguien de nuestro equipo que te escucha, te pregunta lo necesario y te explica cada paso con calma. Te atendemos en español o en inglés, en San Diego y Escondido.</p><p>Si tienes una duda, escríbenos por aquí. Con gusto te orientamos.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #NuestroEquipo #SanDiego #Escondido</p></div></div></section></div><section class="client-panel" data-piece="pieza-6"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-6"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-7" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 7 · Lun 23 nov</p><h2>How to talk to your parents about their wishes</h2><dl class="meta"><div><dt>Formato</dt><dd>Carrusel · 7 slides</dd></div><div><dt>Idioma</dt><dd>EN</dd></div><div><dt>Pilar</dt><dd>Planificación anticipada</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<img src="assets/visual-09.jpg" alt="A son listening to his father over coffee on a sunny patio" style="flex: none; width: 1080px; height: 760px; object-fit: cover; object-position: 50% 45%; display: block; border-bottom: 3px solid #B8955A">
+<div style="flex: 1; box-sizing: border-box; padding: 56px 96px 64px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>For adult children</span>
+<span>01 / 07</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1; letter-spacing: -0.01em">How to talk to your parents about their wishes</h1>
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-size: 30px; color: #3A2F29">You don't need perfect words. Just a first question.</span>
+<svg width="44" height="20" viewBox="0 0 44 20" fill="none" stroke="#B8955A" stroke-width="2" aria-hidden="true"><path d="M0 10h40M32 2l8 8-8 8"></path></svg>
+</div>
+</div>
+</div></div></div><figcaption>Slide 1</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Talking with your parents</span>
+<span>02 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 48px">
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 96px; line-height: 1; color: #5E5049">“De eso no se habla.”</p>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #1C1410">Many of us grew up hearing it. So we wait — until we're guessing what Mom or Dad would have wanted at the hardest possible moment.</p>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #1C1410">One calm conversation now can spare the whole family that weight later.</p>
+</div>
+<div style="font-size: 26px; color: #5E5049">La Paz Funeral Home</div>
+</div></div></div><figcaption>Slide 2</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Talking with your parents</span>
+<span>03 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 200px; line-height: 0.8; color: #B8955A">1</span>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 96px; line-height: 1.02; letter-spacing: -0.01em">Pick a calm moment.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">Not in the middle of a family argument or a stressful week. A Sunday coffee, a drive, an afternoon on the patio — somewhere nobody feels rushed.</p>
+</div>
+<div style="font-size: 26px; color: #6B574D">La Paz Funeral Home</div>
+</div></div></div><figcaption>Slide 3</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Talking with your parents</span>
+<span>04 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 200px; line-height: 0.8; color: #B8955A">2</span>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 96px; line-height: 1.02; letter-spacing: -0.01em">Start with you, not with them.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">It feels less heavy when you share first:</p>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 40px">
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 48px; line-height: 1.2; color: #6B574D">“I've been thinking about writing down my own wishes. Have you ever thought about yours?”</p>
+</div>
+</div>
+<div style="font-size: 26px; color: #6B574D">La Paz Funeral Home</div>
+</div></div></div><figcaption>Slide 4</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Talking with your parents</span>
+<span>05 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 36px">
+<span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 200px; line-height: 0.8; color: #7A5E2E">3</span>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 88px; line-height: 1.02; letter-spacing: -0.01em">Ask open questions.</h2>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Would you prefer cremation or burial?</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Is there a place that matters to you — here, or back home?</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">What would make a service feel like you?</span>
+</div>
+</div>
+<div style="font-size: 26px; color: #5E5049">La Paz Funeral Home</div>
+</div></div></div><figcaption>Slide 5</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Talking with your parents</span>
+<span>06 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 200px; line-height: 0.8; color: #B8955A">4</span>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 96px; line-height: 1.02; letter-spacing: -0.01em">Listen, write it down, come back later.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">You don't need every answer in one talk. Let them lead, jot down what you hear, and pick it up again another day — together.</p>
+</div>
+<div style="font-size: 26px; color: #6B574D">La Paz Funeral Home</div>
+</div></div></div><figcaption>Slide 6</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Talking with your parents</span>
+<span>07 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="width: 96px; height: 3px; background: #1C1410"></div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 100px; line-height: 1.02; letter-spacing: -0.01em">Ready for the next step?</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">We can walk your family through planning-ahead options — in English or Spanish, at your own pace.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 48px">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<div style="background: #F5F2EC; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+<span style="font-size: 26px; color: #6B574D">2601 Imperial Ave</span>
+</div>
+<div style="background: #F5F2EC; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+<span style="font-size: 26px; color: #6B574D">2437 S Centre City Pkwy</span>
+</div>
+</div>
+<img src="assets/visual-01.svg" alt="La Paz Funeral Home" style="width: 380px; height: auto; display: block">
+</div>
+</div></div></div><figcaption>Slide 7</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Darles a los hijos adultos (más cómodos en inglés) cuatro pasos para iniciar la conversación con sus papás. Cae en la semana de Thanksgiving.</p><h3>Hook</h3><p class="hook">“You don&#x27;t need perfect words. Just a first question.”</p></div><section class="captions"><div class="caption"><h3>Caption EN</h3><div class="captext"><p>“De eso no se habla.” A lot of us grew up hearing it. 🤍</p><p>But not knowing what Mom or Dad would want means guessing later, at the hardest possible moment. One calm conversation now can spare your whole family that weight.</p><p>Swipe for four simple ways to start.</p><p>If your family is ready for the next step, send us a message. We&#x27;ll walk you through planning-ahead options, in English or Spanish, at your own pace.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#LaPazFuneralHome #PlanningAhead #LatinoFamilies #SanDiego #Escondido</p></div></div></section></div><section class="client-panel" data-piece="pieza-7"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-7"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-12" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 12 · Mar 24 nov</p><h2>La caja de recetas</h2><dl class="meta"><div><dt>Formato</dt><dd>Reel 9:16 · 30–35 s</dd></div><div><dt>Idioma</dt><dd>ES + EN</dd></div><div><dt>Pilar</dt><dd>Planificación anticipada</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<div style="flex: none; height: 700px; box-sizing: border-box; padding: 300px 96px 56px; display: flex; flex-direction: column; justify-content: flex-end; gap: 22px">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">La caja de recetas</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1; letter-spacing: -0.01em">Lo importante, mi abuela lo dejaba por escrito.</h1>
+</div>
+<div style="flex: 1; display: flex; border-top: 3px solid #B8955A"><img src="assets/visual-10.jpg" alt="Madre e hija revisando la caja de recetas de la abuela" style="width: 1080px; height: 1217px; object-fit: cover; object-position: 50% 58%; display: block"></div>
+</div></div></div><figcaption>Portada</figcaption></figure><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; padding: 420px 96px 440px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center">
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 560px; height: auto; display: block">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 28px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 72px; line-height: 1.05">Te acompañamos desde la primera llamada.</p>
+<p style="margin: 0; font-size: 34px; line-height: 1.4; color: #3A2F29">Escríbenos o llámanos. Te atendemos en español o en inglés.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+</div>
+</div>
+</div></div></div><figcaption>Placa final</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Presentar la planificación como algo que se deja escrito por cariño, igual que una receta. Que la gente escriba para conocer sus opciones.</p><h3>Hook</h3><p class="hook">“Mi abuela nunca midió nada.”</p></div><section class="script"><h3>Historia</h3><p>Tres generaciones cocinan juntas antes de una comida familiar. La abuela, viva y de buen humor, enseña una receta “a ojo”. Más tarde le entrega a su hija una carpeta: ahí dejó escrito lo que quiere para cuando le toque, “para que no batallen”. Termina con la familia a la mesa.</p><h3>Guion</h3><div class="tablewrap"><table class="scenes"><thead><tr><th>Tiempo</th><th>Escena</th><th>Narración en español</th></tr></thead><tbody><tr><td class="num">0–5 s</td><td>Primer plano: manos pasando tarjetas escritas a mano en una caja de madera; harina sobre la barra.</td><td>“Mi abuela nunca midió nada. ‘Un puñito, un chorrito.’”</td></tr><tr><td class="num">5–12 s</td><td>La abuela (unos 78) mueve una olla; la nieta (16) observa y la mamá (45) se ríe. Cocina luminosa.</td><td>“Pero lo importante, eso sí lo dejaba por escrito.”</td></tr><tr><td class="num">12–19 s</td><td>La abuela saca una tarjeta manchada de la caja y se la da a la nieta, que la lee sonriendo.</td><td>“Sus recetas, para que nadie se quedara sin el mole de la familia.”</td></tr><tr><td class="num">19–27 s</td><td>Sala por la tarde. La abuela le da a su hija una carpeta sencilla; la hija asiente y le aprieta la mano.</td><td>“Y también lo que quería para cuando le tocara. ‘Para que no batallen’, nos dijo. No fue una plática triste. Fue otra forma de cuidarnos.”</td></tr><tr><td class="num">27–34 s</td><td>Mesa puesta y llena, la familia sirviéndose. En primer plano, la caja de recetas.</td><td>“En Funeraria La Paz te orientamos para planear con anticipación, en San Diego y Escondido. Escríbenos si quieres conocer tus opciones.”</td></tr></tbody></table></div><p class="note"><strong>Voz:</strong> Mujer latina de unos 45 años (la mamá), con humor suave.</p><h3>Narración en inglés</h3><blockquote>My grandma never measured anything. “A pinch of this, a splash of that.” But the important things, she always wrote down. Her recipes, so no one would ever lose the family mole. And what she wanted when her time came. “So you won&#x27;t have to guess,” she told us. It wasn&#x27;t a sad talk. It was one more way she took care of us. At La Paz Funeral Home, we can help you plan ahead, in San Diego and Escondido. Send us a message to learn your options.</blockquote></section><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>“Un puñito, un chorrito.” ¿A quién más le enseñaron a cocinar así? 🤍</p><p>Esta semana muchas familias vuelven a las recetas de siempre. Y a veces, entre una receta y otra, sale una plática importante. Dejar por escrito lo que queremos no es pensar en lo triste: es una forma más de cuidar a los nuestros.</p><p>Si estás considerando planear con anticipación, escríbenos y te explicamos las opciones disponibles.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #RecetasDeLaAbuela #PlanificaciónAnticipada #SanDiego #Escondido</p></div></div><div class="caption"><h3>Caption EN</h3><div class="captext"><p>“A pinch of this, a splash of that.” Who else learned to cook this way? 🤍</p><p>This week, a lot of families pull out the old recipes. And sometimes, between one dish and the next, an important conversation comes up. Writing down what we want isn&#x27;t about sadness. It&#x27;s one more way to look after the people we love.</p><p>If you&#x27;re thinking about planning ahead, send us a message and we&#x27;ll walk you through your options.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#LaPazFuneralHome #FamilyRecipes #PlanningAhead #SanDiego #Escondido</p></div></div></section><details class="prompts"><summary>Prompts de producción</summary><h4>Prompt de video</h4><pre>Vertical video, 1080 x 1920 px, 9:16, 33 seconds, 5 distinct scenes. Documentary, naturalistic style, steady handheld, 35mm look with gentle film grain. Light, airy palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key natural light, soft shadows. Real-looking Mexican-American family, not models.
+Scene 1 (0-5s): Close-up of hands flipping through handwritten, food-stained index cards in an old wooden recipe box; flour dusted on a light countertop.
+Scene 2 (5-12s): Bright home kitchen. A grandmother about 78, gray hair pinned up, apron, stirs a clay pot, explaining with her free hand; her granddaughter, 16, watches; the mother, 45, leans on the counter laughing.
+Scene 3 (12-19s): The grandmother pulls one stained card from the box and hands it to the granddaughter, who reads it and smiles.
+Scene 4 (19-27s): Living room, soft afternoon light. The grandmother takes a simple folder from a dresser drawer and hands it to her daughter, speaking calmly; the daughter nods and squeezes her hand. Calm, warm, no tears.
+Scene 5 (27-34s): Wide shot of a full dining table, family passing dishes, relaxed and joyful. Recipe box in the soft-focus foreground.
+Mood: warm, light humor, loving. No sadness, no hospitals, no coffins, no candles, no religious objects. No subtitles, no on-screen text, no logos, no watermarks, no graphics.</pre><h4>Foto de portada</h4><pre>Vertical photo, 1080 x 1920 px, aspect ratio 9:16. Candid documentary style. A Latina woman in her early 40s and her teenage daughter at a bright kitchen counter, looking together into an old wooden recipe box full of handwritten index cards; the mother holds up one stained card with a soft, amused smile. Bowls, a molcajete and fresh herbs on the counter. Bright late-morning window light. Light palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key, airy, gentle film grain. Keep the top fifth of the frame clean. No dark tones, no text, no candles, no religious objects, no tears, not stock-looking.</pre></details></div><section class="client-panel" data-piece="pieza-12"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-12"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-11" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 11 · Mié 25 nov</p><h2>¿Tu familia sabe esto de ti?</h2><dl class="meta"><div><dt>Formato</dt><dd>Estático · checklist</dd></div><div><dt>Idioma</dt><dd>Bilingüe</dd></div><div><dt>Pilar</dt><dd>Planificación anticipada</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 88px 96px 72px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">Para platicar en familia · For the family table</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 88px; line-height: 1; letter-spacing: -0.01em">¿Tu familia sabe esto de ti?</h1>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: 44px; line-height: 1.1; color: #5E5049">Does your family know this about you?</p>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<div style="display: flex; gap: 28px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9C2B6">
+<div style="width: 36px; height: 36px; flex: none; border: 2px solid #7A5E2E; border-radius: 4px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 32px; font-weight: 500; line-height: 1.25">Si prefieres cremación o entierro</span><span style="font-size: 23px; color: #5E5049">Cremation or burial</span></div>
+</div>
+<div style="display: flex; gap: 28px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9C2B6">
+<div style="width: 36px; height: 36px; flex: none; border: 2px solid #7A5E2E; border-radius: 4px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 32px; font-weight: 500; line-height: 1.25">Dónde te gustaría descansar</span><span style="font-size: 23px; color: #5E5049">Where you'd like to rest</span></div>
+</div>
+<div style="display: flex; gap: 28px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9C2B6">
+<div style="width: 36px; height: 36px; flex: none; border: 2px solid #7A5E2E; border-radius: 4px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 32px; font-weight: 500; line-height: 1.25">Qué tipo de servicio te gustaría</span><span style="font-size: 23px; color: #5E5049">The kind of service you'd want</span></div>
+</div>
+<div style="display: flex; gap: 28px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9C2B6">
+<div style="width: 36px; height: 36px; flex: none; border: 2px solid #7A5E2E; border-radius: 4px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 32px; font-weight: 500; line-height: 1.25">Música, oraciones o detalles que importan</span><span style="font-size: 23px; color: #5E5049">Music, prayers or details that matter</span></div>
+</div>
+<div style="display: flex; gap: 28px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9C2B6">
+<div style="width: 36px; height: 36px; flex: none; border: 2px solid #7A5E2E; border-radius: 4px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 32px; font-weight: 500; line-height: 1.25">Dónde guardas tus documentos importantes</span><span style="font-size: 23px; color: #5E5049">Where your important papers are</span></div>
+</div>
+<div style="display: flex; gap: 28px; align-items: center; padding: 20px 0; border-bottom: 1px solid #C9C2B6">
+<div style="width: 36px; height: 36px; flex: none; border: 2px solid #7A5E2E; border-radius: 4px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 32px; font-weight: 500; line-height: 1.25">A quién avisar primero</span><span style="font-size: 23px; color: #5E5049">Who to call first</span></div>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px">
+<p style="margin: 0; font-size: 26px; line-height: 1.4; color: #3A2F29; max-width: 560px">¿Quedó alguna vacía? Podemos ayudarte a empezar.<br>Any left blank? We can help you start.</p>
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 240px; height: auto; display: block">
+</div>
+</div></div></div><figcaption>Pieza</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Aprovechar la víspera de Thanksgiving para invitar a una plática corta y práctica. Pieza para guardar y compartir.</p><h3>Hook</h3><p class="hook">“¿Tu familia sabe esto de ti?” / “Does your family know this about you?”</p></div><section class="captions"><div class="caption"><h3>Caption bilingüe</h3><div class="captext"><p>Esta semana muchas familias se sientan a la misma mesa. 🤍 Entre el pavo y el café, puede ser un buen momento para una plática corta: ¿saben tus hijos qué quisieras tú? Guárdate esta lista y revísala con calma. No tienes que responder todo hoy. Si quieres empezar a dejar tus preferencias claras, escríbenos y te explicamos las opciones de planificación anticipada.</p><p>This week, a lot of families share the same table. Somewhere between dinner and dessert, there&#x27;s room for one simple question: does your family know what you&#x27;d want? Save this list and go through it at your own pace. If you&#x27;d like to put your wishes in writing, send us a message and we&#x27;ll walk you through your planning-ahead options.</p><p>📍 San Diego · 619.531.8800 · 📍 Escondido · 760.294.2262</p><p>#FunerariaLaPaz #LaPazFuneralHome #PlanificaciónAnticipada #PlanningAhead #Thanksgiving</p></div></div></section></div><section class="client-panel" data-piece="pieza-11"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-11"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-8" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 8 · Lun 30 nov</p><h2>Volver a casa</h2><dl class="meta"><div><dt>Formato</dt><dd>Reel 9:16 · 30–35 s</dd></div><div><dt>Idioma</dt><dd>ES + EN</dd></div><div><dt>Pilar</dt><dd>Servicios</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<div style="flex: none; height: 640px; box-sizing: border-box; padding: 300px 96px 56px; display: flex; flex-direction: column; justify-content: flex-end; gap: 22px">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Volver a casa</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 96px; line-height: 1; letter-spacing: -0.01em">“Mi papá quiere volver a su pueblo.”</h1>
+</div>
+<img src="assets/visual-11.jpg" alt="Mujer mirando una foto antigua de la plaza de su pueblo" style="flex: 1; width: 1080px; min-height: 0; object-fit: cover; object-position: 50% 45%; display: block; border-top: 3px solid #B8955A">
+</div></div></div><figcaption>Portada</figcaption></figure><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; padding: 420px 96px 440px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center">
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 560px; height: auto; display: block">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 28px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 72px; line-height: 1.05">Te acompañamos desde la primera llamada.</p>
+<p style="margin: 0; font-size: 34px; line-height: 1.4; color: #3A2F29">Escríbenos o llámanos. Te atendemos en español o en inglés.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+</div>
+</div>
+</div></div></div><figcaption>Placa final</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Que las familias binacionales sepan que pueden pedir orientación sobre traslados y escriban para preguntar.</p><h3>Hook</h3><p class="hook">“Mi papá siempre dice que su lugar está en su pueblo.”</p></div><section class="script"><h3>Historia</h3><p>Un padre de unos 75 años le enseña a su hija una foto vieja de la plaza de su pueblo y le repite que, cuando le toque, quiere volver ahí. Ella se da cuenta de que no sabe cómo se hace eso desde aquí. Pregunta, le explican con calma y se lo cuenta en la comida del domingo. Es una conversación de planificación: nadie fallece en la historia.</p><h3>Guion</h3><div class="tablewrap"><table class="scenes"><thead><tr><th>Tiempo</th><th>Escena</th><th>Narración en español</th></tr></thead><tbody><tr><td class="num">0–5 s</td><td>Manos mayores sacan de una lata de galletas una foto en blanco y negro de una plaza con kiosco.</td><td>“Mi papá siempre dice que su lugar está en su pueblo.”</td></tr><tr><td class="num">5–12 s</td><td>Patio de estuco al atardecer. El padre señala la foto y cuenta algo sonriendo; la hija lo escucha.</td><td>“Durante años lo escuché como una historia más.”</td></tr><tr><td class="num">12–19 s</td><td>De noche, la hija sola en su cocina, con una taza y el teléfono. Pensativa pero tranquila, empieza a escribir.</td><td>“Un día me di cuenta de que no sabía cómo se hace eso desde aquí. Así que pregunté.”</td></tr><tr><td class="num">19–27 s</td><td>Comida del domingo. Ella le cuenta; él asiente aliviado y le da palmaditas en la mano.</td><td>“Me explicaron el proceso con calma, paso por paso. Ahora él sabe que su deseo está claro. Y yo también.”</td></tr><tr><td class="num">27–34 s</td><td>La foto de la plaza en el refrigerador, junto a fotos recientes de los nietos.</td><td>“En Funeraria La Paz te orientamos sobre traslados nacionales e internacionales, con ubicaciones en San Diego y Escondido. Escríbenos y te explicamos cómo funciona.”</td></tr></tbody></table></div><p class="note"><strong>Voz:</strong> Mujer mexicoamericana de unos 50 años, cálida y conversacional.</p><h3>Narración en inglés</h3><blockquote>My dad always says home is his little town back in Mexico. For years, I heard it as just another one of his stories. Then one day I realized I had no idea how that would even work from here. So I asked. They walked me through it, step by step, no pressure. Now he knows his wish is clear. And so do I. At La Paz Funeral Home, we can guide you through domestic and international transfers. Serving families in San Diego and Escondido. Send us a message and we&#x27;ll explain how it works.</blockquote></section><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>“Cuando me toque, quiero volver a mi pueblo.” 🤍</p><p>Muchas familias hemos escuchado esa frase en casa. Y casi nunca sabemos qué implica hacerlo realidad desde aquí.</p><p>Si en tu familia alguien tiene ese deseo, conocer el proceso con tiempo da tranquilidad a todos. En Funeraria La Paz te orientamos sobre traslados nacionales e internacionales, en español y con calma. Escríbenos y te explicamos cómo funciona.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #FamiliasBinacionales #SanDiego #Escondido #PlanificaciónAnticipada</p></div></div><div class="caption"><h3>Caption EN</h3><div class="captext"><p>“When my time comes, I want to go home.” 🤍</p><p>A lot of us have heard a parent say it. Few of us know what it actually takes to make it happen from here.</p><p>If someone in your family has that wish, understanding the process early brings everyone peace of mind. We can guide you through domestic and international transfers, in English or Spanish. Send us a message and we&#x27;ll walk you through it.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#LaPazFuneralHome #BinationalFamilies #SanDiego #Escondido #PlanningAhead</p></div></div></section><details class="prompts"><summary>Prompts de producción</summary><h4>Prompt de video</h4><pre>Vertical video, 1080 x 1920 px, 9:16, 32 seconds, 5 distinct scenes. Documentary, naturalistic style, steady handheld, 35mm look with gentle film grain. Light, airy palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key natural light, soft shadows. Real-looking Mexican-American family, not models.
+Scene 1 (0-5s): Top-down close-up on a wooden table. Weathered older hands open a vintage cookie tin and lift out a black-and-white photo of a small-town plaza in Mexico with a bandstand.
+Scene 2 (5-12s): Backyard patio of a Southern California stucco house, sunny late afternoon. A man about 75, gray mustache, button-up shirt, points at the photo while telling a story, smiling. His daughter, about 50, listens warmly.
+Scene 3 (12-19s): Evening, the daughter alone in her bright kitchen, warm pendant light, mug of tea. She holds her phone, thoughtful but calm, then starts typing. Screen not visible.
+Scene 4 (19-27s): Sunday lunch at the father&#x27;s table, embroidered tablecloth, midday window light. She says something gently; he nods with relief and pats her hand.
+Scene 5 (27-34s): The plaza photo held by a magnet on a fridge next to recent color photos of grandchildren. Slow push-in.
+Mood: tender, calm, hopeful. No sadness, no tears, no hospitals, no coffins, no cemeteries, no religious objects, no candles. No subtitles, no on-screen text, no logos, no watermarks, no graphics.</pre><h4>Foto de portada</h4><pre>Vertical photo, 1080 x 1920 px, aspect ratio 9:16. Documentary style. A Mexican-American woman, about 50, sitting by a sunny window at home, gently holding an old faded family photograph of a small town plaza in Mexico, soft nostalgic smile, warmth not sadness. Bright, airy morning light. Light palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key, soft shadows, gentle film grain. Keep the upper and lower fifth of the frame clean. No dark tones, no text, no religious objects, no tears, not stock-looking.</pre></details></div><section class="client-panel" data-piece="pieza-8"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-8"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-9" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 9 · Mar 1 dic</p><h2>No tienes que saber qué preguntar</h2><dl class="meta"><div><dt>Formato</dt><dd>Estático</dd></div><div><dt>Idioma</dt><dd>ES</dd></div><div><dt>Pilar</dt><dd>Acompañamiento</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: grid; grid-template-columns: 540px 540px">
+<div style="box-sizing: border-box; padding: 88px 64px 72px 80px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 36px">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D; line-height: 1.4">Si acabas de recibir una noticia</span>
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 80px; line-height: 1; letter-spacing: -0.01em">No tienes que saber qué preguntar.</h1>
+<p style="margin: 0; font-size: 30px; line-height: 1.45; color: #3A2F29">Empieza por llamarnos o escribirnos. Nosotros te vamos guiando, paso por paso, en español o en inglés.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding: 18px 0; border-bottom: 1px solid #D9D1C5"><span style="font-size: 22px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B574D">San Diego</span><span style="font-size: 32px; font-weight: 600">619.531.8800</span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding: 18px 0; border-bottom: 1px solid #D9D1C5"><span style="font-size: 22px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B574D">Escondido</span><span style="font-size: 32px; font-weight: 600">760.294.2262</span></div>
+</div>
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 240px; height: auto; display: block">
+</div>
+</div>
+<img src="assets/visual-12.jpg" alt="Integrante del equipo de Funeraria La Paz en la recepción" style="width: 540px; height: 1350px; object-fit: cover; display: block; border-left: 3px solid #B8955A; box-sizing: border-box">
+</div></div></div><figcaption>Pieza</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Bajar la barrera de la primera llamada para quien acaba de recibir una noticia.</p><h3>Hook</h3><p class="hook">“Si acabas de recibir una noticia, empieza por aquí.”</p></div><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>Cuando una familia recibe una noticia inesperada, muchas veces la primera pregunta es simplemente: ¿y ahora qué hacemos?</p><p>No necesitas tener las palabras correctas ni saber cómo funciona el proceso. Cuando nos llames o nos escribas, del otro lado va a estar una persona que te pregunta lo necesario y te explica cada paso con calma.</p><p>Si lo prefieres, también puedes mandarnos un mensaje por aquí.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #SanDiego #Escondido #Acompañamiento</p></div></div></section></div><section class="client-panel" data-piece="pieza-9"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-9"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-10" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 10 · Jue 3 dic</p><h2>Cremación o entierro</h2><dl class="meta"><div><dt>Formato</dt><dd>Carrusel · 7 slides</dd></div><div><dt>Idioma</dt><dd>ES</dd></div><div><dt>Pilar</dt><dd>Educación</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<div style="width: 1080px; height: 700px; box-sizing: border-box; flex: none; background: #E6DFD3; border: 3px dashed #B8955A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; padding: 40px; color: #6B574D; font-family: 'Figtree', sans-serif">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A5E2E">Foto pendiente</span>
+<span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 44px; line-height: 1.1; color: #3A2F29">Pareja de 60 años revisando opciones en la mesa de la cocina</span>
+<span style="font-size: 24px">1536 × 1024 px · 3:2 · recorte a 1080 × 700</span>
+</div>
+<div style="flex: 1; box-sizing: border-box; padding: 56px 96px 64px; display: flex; flex-direction: column; justify-content: space-between; border-top: 3px solid #B8955A">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Guía para familias</span>
+<span>01 / 07</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 84px; line-height: 1.02; letter-spacing: -0.01em">Cremación o entierro: lo que conviene saber antes de decidir</h1>
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 30px; color: #3A2F29">Lo básico de cada opción, explicado con calma.</span><svg width="44" height="20" viewBox="0 0 44 20" fill="none" stroke="#B8955A" stroke-width="2" aria-hidden="true"><path d="M0 10h40M32 2l8 8-8 8"></path></svg></div>
+</div>
+</div></div></div><figcaption>Slide 1</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Cremación o entierro</span>
+<span>02 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">No hay una respuesta correcta.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">Hay la que va con la persona y con su familia. Es una decisión personal, y suele depender de lo que la persona quería, de sus creencias y de lo que la familia necesita para despedirse.</p>
+<div style="display: flex; flex-direction: column; gap: 28px; padding-top: 40px; border-top: 1px solid #D9D1C5">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: 56px; line-height: 1.15; color: #6B574D">Conocer las dos opciones ayuda a elegir sin prisa.</p>
+</div>
+</div>
+<div style="font-size: 26px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 2</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Cremación o entierro</span>
+<span>03 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">Entierro</h2>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">El cuerpo se sepulta en un cementerio, en una tumba o en un mausoleo.</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">La familia elige el cementerio y el lugar dentro de él.</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Antes puede haber velación y un servicio religioso o de despedida.</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Muchas familias lo eligen porque deja un lugar al cual ir a visitar.</span>
+</div>
+</div>
+<div style="font-size: 26px; color: #5E5049">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 3</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Cremación o entierro</span>
+<span>04 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">Cremación</h2>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">El cuerpo se reduce a cenizas en un crematorio.</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">La familia recibe las cenizas en una urna.</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">Pueden guardarse, colocarse en un nicho o columbario, o sepultarse.</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">¿Piensas esparcirlas o llevarlas a otro país? Pregunta antes: hay reglas que conviene conocer.</span>
+</div>
+</div>
+<div style="font-size: 26px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 4</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Cremación o entierro</span>
+<span>05 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">En los dos casos, tu familia puede:</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px"><div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 170px; box-sizing: border-box">Hacer una velación</div><div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 170px; box-sizing: border-box">Tener una misa o ceremonia</div><div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 170px; box-sizing: border-box">Reunir a la familia para despedirse</div><div style="background: #FFFFFF; border-radius: 20px; padding: 36px; font-size: 36px; line-height: 1.35; min-height: 170px; box-sizing: border-box">Pedir orientación sobre traslados</div></div>
+<p style="margin: 0; font-size: 34px; line-height: 1.45; color: #5E5049">Elegir cremación no significa renunciar a una despedida.</p>
+</div>
+<div style="font-size: 26px; color: #5E5049">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 5</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Cremación o entierro</span>
+<span>06 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">Preguntas para platicar en familia</h2>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">¿Qué quería la persona? ¿O qué quieres tú?</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">¿Hay creencias o tradiciones importantes para nosotros?</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">¿Queremos un lugar al cual ir a visitar?</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">¿Hay familia lejos que quiera participar?</span>
+</div>
+</div>
+<div style="font-size: 26px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 6</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #1C1410; color: #F5F2EC; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #C9C2B6">
+<span>Cremación o entierro</span>
+<span>07 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 104px; line-height: 1.02; letter-spacing: -0.01em">¿Tienes dudas sobre alguna opción?</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #E6DFD3">Escríbenos y te explicamos cada una con calma, en español o en inglés.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+<span style="font-size: 28px; color: #C9C2B6">2601 Imperial Ave</span>
+</div>
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+<span style="font-size: 28px; color: #C9C2B6">2437 S Centre City Pkwy</span>
+</div>
+</div>
+<img src="assets/visual-02.svg" alt="Funeraria La Paz" style="width: 420px; height: auto; display: block">
+</div>
+</div></div></div><figcaption>Slide 7</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Explicar lo básico de cada opción sin presionar hacia ninguna, y abrir una conversación por mensaje.</p><h3>Hook</h3><p class="hook">“Cremación o entierro: lo que conviene saber antes de decidir.”</p></div><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>¿Cremación o entierro? Es una de las preguntas que más nos hacen, y no tiene una sola respuesta correcta.</p><p>En este carrusel te explicamos lo básico de cada opción y algunas preguntas que pueden ayudar a decidir en familia. Algo que muchas personas no saben: elegir cremación no significa renunciar a una velación o a un servicio.</p><p>Si quieres conocer las opciones con más detalle, escríbenos y te las explicamos con calma, en español o en inglés.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #Cremación #Entierro #SanDiego #Escondido</p></div></div></section><details class="prompts"><summary>Prompts de producción</summary><h4>Foto de portada</h4><pre>Horizontal photo, 1536 x 1024 px, aspect ratio 3:2. Candid documentary style. A Latino couple in their early 60s sitting side by side at a bright kitchen table, looking together at a simple printed brochure and a notebook, calm and thoughtful, the wife resting her hand on her husband&#x27;s arm. Bright late-morning window light, plants and ceramic mugs. Keep both faces in the center of the frame. Light palette: warm ivory, soft sand beige, light taupe, subtle antique-gold touches. High-key, airy, natural film grain. No dark tones, no text, no coffins, no urns, no religious objects, not posed, not stock-looking.</pre></details></div><section class="client-panel" data-piece="pieza-10"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-10"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-13" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 13 · Sáb 5 dic</p><h2>Lo que conviene tener a la mano</h2><dl class="meta"><div><dt>Formato</dt><dd>Carrusel · 7 slides</dd></div><div><dt>Idioma</dt><dd>ES</dd></div><div><dt>Pilar</dt><dd>Educación</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<img src="assets/visual-13.jpg" alt="Equipo de Funeraria La Paz" style="flex: none; width: 1080px; height: 608px; object-fit: cover; display: block; border-bottom: 3px solid #B8955A">
+<div style="flex: 1; box-sizing: border-box; padding: 56px 96px 64px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Para la cita con la funeraria</span>
+<span>01 / 07</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 100px; line-height: 1; letter-spacing: -0.01em">Lo que conviene tener a la mano</h1>
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 30px; color: #3A2F29">Datos y documentos que suelen pedir, y qué hacer si falta alguno.</span><svg width="44" height="20" viewBox="0 0 44 20" fill="none" stroke="#B8955A" stroke-width="2" aria-hidden="true"><path d="M0 10h40M32 2l8 8-8 8"></path></svg></div>
+</div>
+</div></div></div><figcaption>Slide 1</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Antes de la cita</span>
+<span>02 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">¿Por qué piden tantos datos?</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #3A2F29">Una parte del proceso es el acta de defunción (<i>death certificate</i>). Para llenarla se necesitan datos de la persona y de su familia.</p>
+<div style="display: flex; flex-direction: column; gap: 28px; padding-top: 40px; border-top: 1px solid #D9D1C5">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: 54px; line-height: 1.15; color: #6B574D">Tenerlos juntos ahorra llamadas y vueltas cuando nadie quiere andar buscando papeles.</p>
+</div>
+</div>
+<div style="font-size: 26px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 2</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Antes de la cita</span>
+<span>03 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">Datos de la persona</h2>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Nombre completo, como aparece en sus documentos</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Fecha y lugar de nacimiento</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Número de Seguro Social, si tenía</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Último domicilio</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Estado civil y nombre del cónyuge</span>
+</div>
+</div>
+<div style="font-size: 26px; color: #5E5049">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 3</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Antes de la cita</span>
+<span>04 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">Su familia y su historia</h2>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">Nombre completo del padre</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">Nombre completo de la madre, con apellido de soltera</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">Ocupación o tipo de trabajo</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #D9D1C5">Último grado de estudios</span>
+</div>
+</div>
+<div style="font-size: 26px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 4</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #E6DFD3; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5049">
+<span>Antes de la cita</span>
+<span>05 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">Documentos que pueden servir</h2>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #1C1410">
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Identificación oficial</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Documento de baja militar (DD-214), si fue veterano</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Plan funerario o póliza previa, si existe</span>
+<span style="font-size: 36px; line-height: 1.35; padding: 22px 0; border-bottom: 1px solid #C9C2B6">Título de un lote en un cementerio, si ya lo tienen</span>
+</div>
+</div>
+<div style="font-size: 26px; color: #5E5049">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 5</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">
+<span>Antes de la cita</span>
+<span>06 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 92px; line-height: 1.03; letter-spacing: -0.01em">¿Y si falta algo?</h2>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: 64px; line-height: 1.1; color: #7A5E2E">No tienes que tener todo para llamar.</p>
+<p style="margin: 0; font-size: 38px; line-height: 1.45; color: #3A2F29">La funeraria te dice qué hace falta y cómo conseguirlo. Si habrá traslado a otro país, pregunta qué documentos adicionales se necesitan.</p>
+</div>
+<div style="font-size: 26px; color: #6B574D">Funeraria La Paz</div>
+</div></div></div><figcaption>Slide 6</figcaption></figure><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 96px; background: #1C1410; color: #F5F2EC; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #C9C2B6">
+<span>Antes de la cita</span>
+<span>07 / 07</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 104px; line-height: 1.02; letter-spacing: -0.01em">Te ayudamos a revisar la lista.</h2>
+<p style="margin: 0; font-size: 40px; line-height: 1.45; color: #E6DFD3">Escríbenos o llámanos y te decimos qué necesitas en tu caso, en español o en inglés.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 56px">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+<span style="font-size: 28px; color: #C9C2B6">2601 Imperial Ave</span>
+</div>
+<div style="background: #2B211C; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B8955A">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+<span style="font-size: 28px; color: #C9C2B6">2437 S Centre City Pkwy</span>
+</div>
+</div>
+<img src="assets/visual-02.svg" alt="Funeraria La Paz" style="width: 420px; height: auto; display: block">
+</div>
+</div></div></div><figcaption>Slide 7</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Que las familias lleguen preparadas a la cita con la funeraria y sepan que pueden llamar aunque les falte algo. Pieza para guardar.</p><h3>Hook</h3><p class="hook">“Lo que conviene tener a la mano.”</p></div><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>Guárdalo para cuando lo necesites. 🤍</p><p>Cuando una familia llega a la cita con la funeraria, una de las cosas que más tiempo toma es reunir datos: fechas, nombres completos, documentos. Aquí te dejamos una lista de lo que suele pedirse para el acta de defunción y de los papeles que pueden servir.</p><p>Y lo más importante: no necesitas tener todo para llamarnos. Te decimos qué falta y cómo conseguirlo, paso por paso.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #Orientación #SanDiego #Escondido</p></div></div></section></div><section class="client-panel" data-piece="pieza-13"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-13"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-14" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 14 · Mar 8 dic</p><h2>La foto del bisabuelo</h2><dl class="meta"><div><dt>Formato</dt><dd>Reel 9:16 · 30–35 s</dd></div><div><dt>Idioma</dt><dd>ES + EN</dd></div><div><dt>Pilar</dt><dd>Servicios</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column">
+<div style="width: 1080px; height: 1160px; box-sizing: border-box; flex: none; background: #E6DFD3; border: 3px dashed #B8955A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; padding: 40px; color: #6B574D; font-family: 'Figtree', sans-serif">
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A5E2E">Foto pendiente</span>
+<span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 44px; line-height: 1.1; color: #3A2F29">Abuelo y nieto mirando la foto del bisabuelo</span>
+<span style="font-size: 24px">1080 × 1920 px · 9:16 · se recorta abajo</span>
+</div>
+<div style="flex: 1; box-sizing: border-box; padding: 64px 96px 0; display: flex; flex-direction: column; gap: 26px; border-top: 3px solid #B8955A">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">La foto del bisabuelo</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 104px; line-height: 1; letter-spacing: -0.01em">“Así quiero que sea la mía.”</h1>
+</div>
+</div></div></div><figcaption>Portada</figcaption></figure><figure class="slide tall"><div class="frame"><div class="art"><div style="width: 1080px; height: 1920px; box-sizing: border-box; padding: 420px 96px 440px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center">
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 560px; height: auto; display: block">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 28px">
+<div style="width: 96px; height: 3px; background: #B8955A"></div>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 72px; line-height: 1.05">Te acompañamos desde la primera llamada.</p>
+<p style="margin: 0; font-size: 34px; line-height: 1.4; color: #3A2F29">Escríbenos o llámanos. Te atendemos en español o en inglés.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">San Diego</span>
+<span style="font-size: 40px; font-weight: 600">619.531.8800</span>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Escondido</span>
+<span style="font-size: 40px; font-weight: 600">760.294.2262</span>
+</div>
+</div>
+</div></div></div><figcaption>Placa final</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Mostrar que una despedida puede contar quién fue la persona, y que se puede platicar con tiempo.</p><h3>Hook</h3><p class="hook">“Mi papá era el más alegre del pueblo.”</p></div><section class="script"><h3>Historia</h3><p>Un abuelo le cuenta a su nieto quién era el hombre de la foto sepia: su papá, el más alegre del pueblo, cuya despedida tuvo música toda la noche porque así lo pidió. Entusiasmado, pone un disco viejo y aprovecha para decir cómo quiere la suya. Su hija lo apunta, entre risas.</p><h3>Guion</h3><div class="tablewrap"><table class="scenes"><thead><tr><th>Tiempo</th><th>Escena</th><th>Narración en español</th></tr></thead><tbody><tr><td class="num">0–4 s</td><td>Retrato sepia en un marco de madera sobre un librero. La mano de un niño lo toma.</td><td>“Mi papá era el más alegre del pueblo.”</td></tr><tr><td class="num">4–11 s</td><td>Sofá de la sala, luz de tarde. El abuelo (unos 78) señala la foto y cuenta; el nieto (10) escucha con curiosidad.</td><td>“Cuando se despidió, hubo música toda la noche, porque así lo pidió él.”</td></tr><tr><td class="num">11–18 s</td><td>El abuelo pone un disco de vinil en un tocadiscos y hace un pasito; el nieto se ríe.</td><td>“Hoy le conté a mi nieto esa historia. Y aproveché para decir cómo quiero la mía.”</td></tr><tr><td class="num">18–25 s</td><td>Desde la puerta de la cocina, la hija (unos 45) sonríe y apunta algo en una libreta.</td><td>“Mi hija lo apuntó todo. Nos reímos mucho.”</td></tr><tr><td class="num">25–34 s</td><td>Atardecer. El retrato vuelve al librero, junto a una foto reciente del abuelo con su nieto.</td><td>Voz de cierre: “Una despedida también puede contar quién fue una persona. En Funeraria La Paz te orientamos para planearla con calma, en San Diego y Escondido. Escríbenos y platicamos.”</td></tr></tbody></table></div><p class="note"><strong>Voz:</strong> El abuelo: hombre mexicano de unos 78 años, voz grave y risueña. El cierre, voz femenina cálida.</p><h3>Narración en inglés</h3><blockquote>My father was the happiest man in our town. When he passed, there was music all night long, because that&#x27;s what he asked for. Today I told my grandson that story. And while I was at it, I told them how I want mine. My daughter wrote it all down. We laughed a lot. — A goodbye can also tell the story of who someone was. At La Paz Funeral Home, we can help you plan it with time and calm, in San Diego and Escondido. Send us a message and let&#x27;s talk.</blockquote></section><section class="captions"><div class="caption"><h3>Caption ES</h3><div class="captext"><p>“Que haya música toda la noche.” 🎶 Así pidió su despedida el bisabuelo, y así se hizo.</p><p>Cada familia tiene su manera de recordar. Una canción, un platillo, una foto, una forma de reunirse. Platicar con tiempo cómo nos gustaría ser despedidos ayuda a que ese día se parezca a quién fuimos.</p><p>Si quieres platicar sobre cómo planear un servicio con anticipación, escríbenos. Te orientamos con calma.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#FunerariaLaPaz #Legado #PlanificaciónAnticipada #SanDiego #Escondido</p></div></div><div class="caption"><h3>Caption EN</h3><div class="captext"><p>“Let there be music all night.” 🎶 That&#x27;s how great-grandpa wanted his goodbye, and that&#x27;s how it went.</p><p>Every family remembers in its own way: a song, a dish, a photo, a way of gathering. Talking ahead of time about how we&#x27;d like to be remembered helps that day feel like us.</p><p>If you&#x27;d like to talk about planning a service ahead of time, send us a message. We&#x27;re here to guide you.</p><p>📍 San Diego · 2601 Imperial Ave · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy · 760.294.2262</p><p>#LaPazFuneralHome #Legacy #PlanningAhead #SanDiego #Escondido</p></div></div></section><details class="prompts"><summary>Prompts de producción</summary><h4>Prompt de video</h4><pre>Vertical video, 1080 x 1920 px, 9:16, 34 seconds, 5 distinct scenes. Documentary, naturalistic style, steady handheld, 35mm look with gentle film grain. Light, airy palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key natural light, soft shadows. Real-looking Mexican-American family, not models.
+Scene 1 (0-4s): Detail shot of an old sepia portrait of a smiling man in a simple wooden frame on a bookshelf; a child&#x27;s hand reaches in and picks it up.
+Scene 2 (4-11s): Living-room sofa, bright afternoon side light, houseplants. A grandfather about 78, white mustache, cardigan, points at the portrait and tells a story with animated hands; his grandson, about 10, listens.
+Scene 3 (11-18s): The grandfather places a vinyl record on an old turntable and does a small, playful dance step; the grandson laughs.
+Scene 4 (18-25s): From the kitchen doorway, the daughter, about 45, watches smiling, then writes in a small notebook on the counter.
+Scene 5 (25-34s): Early evening, warm lamp light. The sepia portrait back on the shelf, next to a recent color photo of the grandfather and grandson. Slow push-in.
+Mood: joyful, nostalgic, warm. No sadness, no tears, no hospitals, no coffins, no altars, no candles, no religious objects. No subtitles, no on-screen text, no logos, no watermarks, no graphics.</pre><h4>Foto de portada</h4><pre>Vertical photo, 1080 x 1920 px, aspect ratio 9:16. Candid documentary style. A Mexican-American grandfather in his late 70s on a living-room sofa beside his grandson of about 10, both looking at an old sepia portrait in a simple wooden frame; the grandfather points at the man in the photo, telling a story, the boy curious. Bright afternoon light from a side window, houseplants. Light palette: warm ivory, soft sand beige, light taupe, subtle antique-gold highlights. High-key, airy, gentle film grain. Keep the bottom 40% of the frame free of key details. No dark tones, no text, no candles, no altars, no religious objects, no tears, not stock-looking.</pre></details></div><section class="client-panel" data-piece="pieza-14"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-14"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article><article id="pieza-15" class="piece"><header class="piece-head"><p class="eyebrow">Pieza 15 · Jue 10 dic</p><h2>Dos ubicaciones</h2><dl class="meta"><div><dt>Formato</dt><dd>Estático</dd></div><div><dt>Idioma</dt><dd>Bilingüe</dd></div><div><dt>Pilar</dt><dd>Comunidad y ubicaciones</dd></div></dl></header><div class="strip" role="region" aria-label="Diseños de la pieza" tabindex="0"><figure class="slide"><div class="frame"><div class="art"><div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 88px 96px 72px; background: #F5F2EC; color: #1C1410; font-family: 'Figtree', sans-serif; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 20px">
+<div style="width: 64px; height: 3px; background: #B8955A"></div>
+<span style="font-size: 26px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B574D">Dos ubicaciones · Two locations</span>
+</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 80px; line-height: 1.02; letter-spacing: -0.01em">Cerca de ti, en San Diego y Escondido</h1>
+<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: 42px; line-height: 1.1; color: #6B574D">Close to home in San Diego and Escondido</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<img src="assets/visual-14.jpg" alt="Fachada de Funeraria La Paz en San Diego" style="width: 100%; height: 400px; object-fit: cover; object-position: 40% 60%; display: block">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A5E2E">San Diego</span>
+<span style="font-size: 28px; line-height: 1.35; color: #3A2F29">2601 Imperial Ave<br>San Diego, CA 92102</span>
+<span style="font-size: 38px; font-weight: 600; padding-top: 6px">619.531.8800</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<img src="assets/visual-05.jpg" alt="Fachada de Funeraria La Paz en Escondido" style="width: 100%; height: 400px; object-fit: cover; object-position: 50% 45%; display: block">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A5E2E">Escondido</span>
+<span style="font-size: 28px; line-height: 1.35; color: #3A2F29">2437 S Centre City Pkwy<br>Escondido, CA 92025</span>
+<span style="font-size: 38px; font-weight: 600; padding-top: 6px">760.294.2262</span>
+</div>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; padding-top: 32px; border-top: 1px solid #D9D1C5">
+<span style="font-size: 26px; line-height: 1.4; color: #3A2F29">Te atendemos en español o en inglés.<br>We're here in English or Spanish.</span>
+<img src="assets/visual-01.svg" alt="Funeraria La Paz" style="width: 260px; height: auto; display: block">
+</div>
+</div></div></div><figcaption>Pieza</figcaption></figure></div><div class="body"><div class="why"><h3>Objetivo</h3><p>Que cualquier persona del condado sepa qué sede le queda más cerca y tenga la dirección y el teléfono a la mano. Pieza para fijar en el perfil.</p><h3>Hook</h3><p class="hook">“Cerca de ti, en San Diego y Escondido.”</p></div><section class="captions"><div class="caption"><h3>Caption bilingüe</h3><div class="captext"><p>¿Cuál te queda más cerca? 🤍 Tenemos dos ubicaciones en el condado de San Diego, y en las dos te atendemos en español o en inglés. Guarda esta publicación o compártela con alguien de tu familia: es bueno tener los datos a la mano antes de necesitarlos.</p><p>Two locations in San Diego County, and at both we can help you in English or Spanish. Save this post or share it with family: it helps to have the info handy before you need it.</p><p>📍 San Diego · 2601 Imperial Ave, San Diego, CA 92102 · 619.531.8800
+📍 Escondido · 2437 S Centre City Pkwy, Escondido, CA 92025 · 760.294.2262</p><p>#FunerariaLaPaz #LaPazFuneralHome #SanDiego #Escondido #NorthCounty</p></div></div></section></div><section class="client-panel" data-piece="pieza-15"><h3>Revisión de esta publicación</h3><label>Estado<select class="client-decision" aria-label="Estado de pieza-15"><option value="pendiente">Pendiente de revisión</option><option value="aprobado">Aprobado para publicar</option><option value="cambios">Solicitar cambios</option></select></label><label>Comentarios o correcciones<textarea class="client-notes" placeholder="Ejemplo: cambiar la fotografía, corregir el texto, modificar la fecha..."></textarea></label><span class="client-status-badge" aria-live="polite">Pendiente de revisión</span><span class="client-hint">Los comentarios se guardan aquí, pero debes enviarlos al terminar para que el equipo los reciba.</span></section></article>
+<section class="confirm piece">
+<div class="section-head"><p class="eyebrow">Antes de publicar</p><h2>Para confirmar con ustedes</h2></div>
+<ol><li>Pieza 13: ¿la lista de datos y documentos coincide con lo que ustedes piden a las familias en la cita? Si falta o sobra algo, lo ajustamos.</li><li>Las portadas de la pieza 10 (Cremación o entierro) y la pieza 14 (La foto del bisabuelo) todavía aparecen como «Foto pendiente». Se integran antes de publicar.</li><li>Pieza 15: la foto de la fachada de San Diego es provisional. La cambiamos por una foto nueva en cuanto la tengamos.</li></ol>
+</section>
+<section id="enviar-revision" class="client-summary"><h2>Enviar revisión del contenido</h2><p>Al terminar, utiliza el botón para preparar un correo con las decisiones y observaciones de cada publicación. También puedes descargar o copiar una copia de tu revisión.</p><label>Nombre de quien revisa<input id="client-name" autocomplete="name" placeholder="Nombre y apellido"></label><label>Observaciones generales<textarea id="client-general" rows="4" placeholder="Comentarios generales sobre el calendario, tono o prioridades..."></textarea></label><p id="client-progress" aria-live="polite">0 de 15 revisadas</p><div class="client-actions"><button type="button" id="client-email">Enviar revisión por correo</button><button type="button" id="client-download" class="secondary">Descargar revisión (.txt)</button><button type="button" id="client-copy" class="secondary">Copiar revisión</button></div><p class="client-feedback" id="client-feedback">Tus respuestas se guardan solo en este navegador. Para compartirlas, envía el correo desde tu aplicación o descarga el archivo.</p></section><footer><span>Funeraria La Paz · La Paz Funeral Home</span><span>San Diego · 2601 Imperial Ave · 619.531.8800</span><span>Escondido · 2437 S Centre City Pkwy · 760.294.2262</span></footer>
+</div>
+<script id="review-script">
+(function(){
+"use strict";
+var key="lapaz-noviembre-revision-v1",panels=Array.from(document.querySelectorAll(".client-panel")),name=document.getElementById("client-name"),general=document.getElementById("client-general"),progress=document.getElementById("client-progress"),message=document.getElementById("client-feedback");
+var labels={pendiente:"Pendiente de revisión",aprobado:"Aprobado para publicar",cambios:"Solicitar cambios"},saved={};
+try{saved=JSON.parse(localStorage.getItem(key)||"{}")||{}}catch(e){saved={}}
+name.value=saved.name||"";general.value=saved.general||"";
+panels.forEach(function(p){var old=(saved.pieces||[]).find(function(x){return x.id===p.dataset.piece});if(old){p.querySelector("select").value=labels[old.status]?old.status:"pendiente";p.querySelector("textarea").value=old.notes||"";}p.querySelector("select").addEventListener("change",save);p.querySelector("textarea").addEventListener("input",save);});
+name.addEventListener("input",save);general.addEventListener("input",save);
+function collect(){return {name:name.value.trim(),general:general.value.trim(),pieces:panels.map(function(p){return {id:p.dataset.piece,title:p.closest("article").querySelector("h2").textContent.trim(),status:p.querySelector("select").value,notes:p.querySelector("textarea").value.trim()}})}}
+function save(){var state=collect(),approved=state.pieces.filter(function(x){return x.status==="aprobado"}).length,changes=state.pieces.filter(function(x){return x.status==="cambios"}).length;progress.textContent=(approved+changes)+" de "+state.pieces.length+" revisadas · "+approved+" aprobadas · "+changes+" con cambios";panels.forEach(function(p){p.querySelector(".client-status-badge").textContent=labels[p.querySelector("select").value]});try{localStorage.setItem(key,JSON.stringify(state))}catch(e){message.textContent="No fue posible guardar automáticamente. Descarga tu revisión antes de salir."}}
+function report(){var s=collect(),out=["FUNERARIA LA PAZ | REVISIÓN DE CONTENIDO NOVIEMBRE 2026","Revisor: "+(s.name||"Sin especificar"),"Fecha: "+new Date().toLocaleString("es-MX"),"","COMENTARIOS GENERALES",s.general||"Sin observaciones",""];s.pieces.forEach(function(x,i){out.push((i+1)+". "+x.title,"Estado: "+labels[x.status],"Comentarios: "+(x.notes||"Sin observaciones"),"")});return out.join("\n")}
+document.getElementById("client-email").addEventListener("click",function(){var s=collect();if(s.pieces.every(function(x){return x.status==="pendiente"&&!x.notes})&&!s.general){message.textContent="Selecciona al menos una decisión o escribe comentarios antes de enviar.";return;}var url="mailto:jesslopez@utb.edu.co?subject="+encodeURIComponent("Revisión de contenido La Paz - Noviembre 2026")+"&body="+encodeURIComponent(report());if(url.length>19000){message.textContent="Los comentarios son extensos. Descarga el archivo de revisión y adjúntalo a un correo.";return}window.location.href=url;message.textContent="Se preparó el correo. Recuerda pulsar Enviar desde tu aplicación de correo.";});
+document.getElementById("client-download").addEventListener("click",function(){var blob=new Blob([report()],{type:"text/plain;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="Revision_La_Paz_Noviembre_2026.txt";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1000);message.textContent="Revisión descargada. Puedes compartir el archivo con el equipo.";});
+document.getElementById("client-copy").addEventListener("click",function(){if(!navigator.clipboard){message.textContent="Utiliza la opción de descarga.";return}navigator.clipboard.writeText(report()).then(function(){message.textContent="Revisión copiada al portapapeles."}).catch(function(){message.textContent="No se pudo copiar. Utiliza la descarga."})});
+save();
+})();
+</script>
+</body>
+</html>
